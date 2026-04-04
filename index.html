@@ -151,21 +151,5 @@
       <p><a href="#top">Back to top</a></p>
     </div>
   </footer>
-
-  <script>
-    const readerForm = document.getElementById("reader-form");
-    const colorField = document.getElementById("color");
-    const backgroundThemes = {
-      pink: "linear-gradient(to right, #fde7ef 0%, #fde7ef 50%, #f6cad8 50%, #f6cad8 100%)",
-      burgundy: "linear-gradient(to right, #f2d7dd 0%, #f2d7dd 50%, #7b2d3a 50%, #7b2d3a 100%)",
-      white: "linear-gradient(to right, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%)",
-      black: "linear-gradient(to right, #d9d9d9 0%, #d9d9d9 50%, #1f1f1f 50%, #1f1f1f 100%)"
-    };
-
-    readerForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-      document.body.style.background = backgroundThemes[colorField.value] || "";
-    });
-  </script>
 </body>
 </html>
